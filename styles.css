@@ -1,0 +1,136 @@
+body {
+    background-image: url('./water-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+@media screen and (max-width: 468px) {
+    .container{
+        max-width: 350px;
+    }
+}
+
+.water__input {
+    position: relative;
+    top: 5%;
+}
+
+.water__label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 468px) {
+    .water__label {
+    text-align: center;
+}
+    .water__input__result {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .water__state {
+        width: 300px;
+    }
+
+    .water__input {
+        max-width: 330px;
+ }
+    .water__temperature__input {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .water__state {
+        width: 1000px;
+    }
+      
+}
+
+.water__temperature__input {
+    padding: 40px;
+    font-size: 36px;
+    
+    border: 2px solid blue;
+    opacity: 0.8;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form:focus-within .water__temperature__input {
+      background: azure;
+}
+
+.water__temperature__input:focus {
+     border: 2px solid rgb(3, 0, 0);
+     outline: none;
+}
+
+.water__input__result {
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+
+    color: red;
+}
+
+
+.water__result {
+    font-size: 55px;
+
+    
+}
+
+.result__btn {
+    padding: 20px;
+    border-radius: 5%;
+    outline: none;
+    appearance: none;
+    border: 1px solid rgb(180, 138, 60);
+    background: transparent;
+
+    cursor: pointer;
+
+    color: white;
+    
+    font-size: 26px;
+    font-style: italic;
+
+}
+
+.result__btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.result__btn:hover {
+    color: red;
+    background: rgb(243, 159, 3);
+}
+
+
+.water__state {
+    display: block;
+    color:#000;
+    font-size: 32px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    background: rgba(255, 255, 255, 0.5);;
+    border-radius: 1%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
